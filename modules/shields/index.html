@@ -4,13 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banderas</title>
+  <title>Escudos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../index.css">
   <link rel="stylesheet" href="../clubes/clubes.css">
-  <link rel="stylesheet" href="./flags.css">
+
+  <style>
+    /* Altura uniforme para columnas */
+    .card-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+
+    /* Ajuste responsivo de las imágenes */
+    .card-column img {
+      max-height: 150px;
+      /* Ajusta el tamaño máximo de la imagen */
+      width: auto;
+    }
+  </style>
 
 </head>
 
@@ -19,14 +37,13 @@
     <nav class="d-flex justify-content-between align-items-center">
       <ul class="row list-unstyled">
         <li class="col-4">
-          <a href="../shields/index.html" class="text-decoration-none" style="color: #000000;">Escudos</a>
+          <a href="./index.html" class="text-decoration-none fw-bold" style="color: #000000;">Escudos</a>
         </li>
         <li class="col-4">
           <a href="../brands/brands.html" class="text-decoration-none" style="color: #000000;">Marcas</a>
         </li>
         <li class="col-4">
-          <a href="../flags/flags.html" class="text-decoration-none"
-            style="color: #000000; font-weight: bold;">Banderas</a>
+          <a href="../flags/flags.html" class="text-decoration-none" style="color: #000000;">Banderas</a>
         </li>
       </ul>
 
@@ -44,51 +61,44 @@
     </a>
   </div>
 
-  <div class="d-flex justify-content-center bg-purple flex-column section-flags">
+  <div class="d-flex align-items-center bg-purple flex-column section-clubes">
     <span class="text-white d-flex flex-column text-center">
-      <h1 class="text-center">
-        Banderas
-      </h1>
+      <h1 class="text-center">Escudos</h1>
       <hr style="height: 2px; width: 500px; border: none; background-color: white; opacity: 1; margin: 0 auto;">
-      <h3>
-        Selecciona una confederación
-      </h3>
     </span>
 
-    <div class="container-xxl img-section-flags">
-      <div class="row justify-content-center" style="row-gap: 70px;">
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/mundiales.png" alt="AFC" style="width: auto; height: 150px;">
+    <div class="img-section-flags container">
+      <div class="row gx-5 gy-4 justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center text-white card-column">
+          <a href="../confederations/index.html" class="text-decoration-none text-white">
+            <img src="../../assets/escudos/Recurso 4.png" alt="Confederaciones" class="img-fluid">
+            <h3 class="mt-4">Confederaciones</h3>
+          </a>
         </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center text-white card-column">
+          <a href="../country-teams/index.html" class="text-decoration-none text-white">
+            <img src="../../assets/escudos/Recurso 2.png" alt="Selecciones" class="img-fluid">
+            <h3 class="mt-4">Selecciones</h3>
+          </a>
 
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/Recurso 20.png" alt="CAF" style="width: auto; height: 100px;">
         </div>
-
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/Recurso 19.png" alt="CONCACAF" style="width: auto; height: 150px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center text-white card-column">
+          <a href="../clubes/clubes.html" class="text-decoration-none text-white">
+            <img src="../../assets/escudos/Recurso 1.png" alt="Clubes" class="img-fluid">
+            <h3 class="mt-4">Clubes</h3>
+          </a>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/Recurso 18.png" alt="CONMEBOL" style="width: auto; height: 150px;">
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/Recurso 17.png" alt="OFC" style="width: auto; height: 150px;">
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/Recurso 15.png" alt="UEFA" style="width: auto; height: 150px;">
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-12 text-center">
-          <img src="../../assets/escudos selecciones/Recurso 16.png" alt="UEFA" style="width: auto; height: 150px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center text-white card-column">
+          <a href="../tournaments/index.html" class="text-decoration-none text-white">
+            <img src="../../assets/escudos/Recurso 3.png" alt="Torneos" class="img-fluid">
+            <h3 class="mt-4">Torneos</h3>
+          </a>
         </div>
       </div>
-
     </div>
-
   </div>
+
+
 
   <footer class="footer-section">
     <div class="footer-logo">

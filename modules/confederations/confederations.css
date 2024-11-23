@@ -21,6 +21,13 @@ header {
     overflow: hidden;
 }
 
+.card-custom-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .badge-icon {
     position: absolute;
     top: 10px;
